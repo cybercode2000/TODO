@@ -337,36 +337,34 @@
            const mainLocation = category.value;
         
            const eachTask = {
-               date,
-               Time: taskDate,
+               taskDate,
                taskTitle,
                mainNote,
                mainLocation
            }
+           console.log(eachTask);
+                // const memory = localStorage.getItem('tasklist');
+                // if(memory == null){
+                //     const database = {
+                //         "db": [
+                //         ]
+                //     }
+                //     const newMem = database.db;
+                //     newMem.push(eachTask);
+                //     localStorage.setItem('tasklist', JSON.stringify(database));
+                //     console.log('saved');
+                // }
+                // else {
+                //     const mainMemory = JSON.parse(memory);
+                //     const newStorage = mainMemory.db;
+                //     newStorage.push(eachTask);    
+                //     localStorage.setItem('tasklist', JSON.stringify(mainMemory));
+                // }
 
-                const memory = localStorage.getItem('tasklist');
-                if(memory == null){
-                    const database = {
-                        "db": [
-                        ]
-                    }
-                    const newMem = database.db;
-                    newMem.push(eachTask);
-                    localStorage.setItem('tasklist', JSON.stringify(database));
-                    console.log('saved');
-                }
-                else {
-                    const mainMemory = JSON.parse(memory);
-                    const newStorage = mainMemory.db;
-                    newStorage.push(eachTask);    
-                    localStorage.setItem('tasklist', JSON.stringify(mainMemory));
-                }
-
-                newAlert.style.display = "block";
-                setTimeout(() => {
-                    newAlert.style.display = "none";
-                }, 3000)
-                // month.value = date.getMonth() + 1;
+                // newAlert.style.display = "block";
+                // setTimeout(() => {
+                //     newAlert.style.display = "none";
+                // }, 3000)
         })
         
     </script>
