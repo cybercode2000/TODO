@@ -35,14 +35,13 @@
                     <div style="width: 100%" class="justify-content-center">
                         <h3 class="text-center font-weight-bold mb-4" style="color: #27446d; font-size: 30px">Add New Task</h3>
                         <div class="d-flex justify-content-center mb-4 font-weight-bold">
-                            <input type="text" style="background: #f8f8f8; height: 3rem; width: 48%; font-weight:bold; border: 0px; border: 1px solid #b0b0b0; color: #27446d; border-radius: 2px; font-size: 23px; padding-left: 10px;">
+                            <input id="taskTitle" type="text" style="background: #f8f8f8; height: 3rem; width: 48%; font-weight:bold; border: 0px; border: 1px solid #b0b0b0; color: #27446d; border-radius: 2px; font-size: 23px; padding-left: 10px;">
                             
-                            <select class="font-weight-bold" style="background: #f8f8f8; border: 0px; border: 1px solid #b0b0b0; padding: 5px; padding-top: 5px; padding-left: 5px; padding-right: 5px; color: #28446c">
+                            <select id="location" class="font-weight-bold" style="background: #f8f8f8; border: 0px; border: 1px solid #b0b0b0; padding: 5px; padding-top: 5px; padding-left: 5px; padding-right: 5px; color: #28446c">
                                 <option value="">Please Select</option>
-                                <option value="">Personal</option>
-                                <option>Important</option>
-                                <option>Different</option>
-                                <option>Free</option>
+                                <option value="Personal">Personal</option>
+                                <option value="Important">Important</option>
+                                <option value="Family">Family</option>
                             </select>
                      
                         </div>
@@ -52,20 +51,72 @@
                         <div class="container-fluid d-flex justify-content-center ml-2">
                         <div class="" style="padding-left: 9%; width: 30%">
                             <span class="font-weight-bold mb-2" style="font-size: 20px">Date</span><br>
-                            <select class="mt-2 font-weight-bold pl-2 pr-2" name="" id="" style="height: 50%; width: 30%; color: #27446d; background: #f7f3f2; ">
-                                <option value="1" class="font-weight-bold p-2" style="color: #27446d;"> <span>01</span> </option>
+                            <select id="day" class="mt-2 font-weight-bold pl-2 pr-2" style="height: 50%; width: 30%; color: #27446d; background: #f7f3f2; ">
+                                <option value="01" class="font-weight-bold p-2" style="color: #27446d;"> <span>01</span> </option>
+                                <option value="02" class="font-weight-bold p-2" style="color: #27446d;"> <span>02</span> </option>
+                                <option value="03" class="font-weight-bold p-2" style="color: #27446d;"> <span>03</span> </option>
+                                <option value="04" class="font-weight-bold p-2" style="color: #27446d;"> <span>04</span> </option>
+                                <option value="05" class="font-weight-bold p-2" style="color: #27446d;"> <span>05</span> </option>
+                                <option value="06" class="font-weight-bold p-2" style="color: #27446d;"> <span>06</span> </option>
+                                <option value="07" class="font-weight-bold p-2" style="color: #27446d;"> <span>07</span> </option>
+                                <option value="08" class="font-weight-bold p-2" style="color: #27446d;"> <span>08</span> </option>
+                                <option value="09" class="font-weight-bold p-2" style="color: #27446d;"> <span>09</span> </option>
+                                <option value="10" class="font-weight-bold p-2" style="color: #27446d;"> <span>10</span> </option>
+                                <option value="11" class="font-weight-bold p-2" style="color: #27446d;"> <span>11</span> </option>
+                                <option value="12" class="font-weight-bold p-2" style="color: #27446d;"> <span>12</span> </option>
+                                <option value="13" class="font-weight-bold p-2" style="color: #27446d;"> <span>13</span> </option>
+                                <option value="14" class="font-weight-bold p-2" style="color: #27446d;"> <span>14</span> </option>
+                                <option value="15" class="font-weight-bold p-2" style="color: #27446d;"> <span>15</span> </option>
+                                <option value="16" class="font-weight-bold p-2" style="color: #27446d;"> <span>16</span> </option>
+                                <option value="17" class="font-weight-bold p-2" style="color: #27446d;"> <span>17</span> </option>
+                                <option value="18" class="font-weight-bold p-2" style="color: #27446d;"> <span>18</span> </option>
+                                <option value="19" class="font-weight-bold p-2" style="color: #27446d;"> <span>19</span> </option>
+                                <option value="20" class="font-weight-bold p-2" style="color: #27446d;"> <span>20</span> </option>
+                                <option value="21" class="font-weight-bold p-2" style="color: #27446d;"> <span>21</span> </option>
+                                <option value="22" class="font-weight-bold p-2" style="color: #27446d;"> <span>22</span> </option>
+                                <option value="23" class="font-weight-bold p-2" style="color: #27446d;"> <span>23</span> </option>
+                                <option value="24" class="font-weight-bold p-2" style="color: #27446d;"> <span>24</span> </option>
+                                <option value="25" class="font-weight-bold p-2" style="color: #27446d;"> <span>25</span> </option>
+                                <option value="26" class="font-weight-bold p-2" style="color: #27446d;"> <span>26</span> </option>
+                                <option value="27" class="font-weight-bold p-2" style="color: #27446d;"> <span>27</span> </option>
+                                <option value="28" class="font-weight-bold p-2" style="color: #27446d;"> <span>28</span> </option>
+                                <option id="29" value="29" class="font-weight-bold p-2" style="color: #27446d;"> <span>29</span> </option>
+                                <option id="30" value="30" class="font-weight-bold p-2" style="color: #27446d;"> <span>30</span> </option>
+                                <option id="31" value="31" class="font-weight-bold p-2" style="color: #27446d;"> <span>31</span> </option>
                             </select>
                         </div>
                         <div style="width: 40%; margin-left: -10%">
                             <span class="mb-2"></span><br>
-                            <select class="mt-3 font-weight-bold pl-2 pr-2" name="" id="" style="height: 50%; width: 25%; color: #27446d; background: #f7f3f2; ">
-                                <option value="1" class="font-weight-bold p-2" style="color: #27446d; font-size: 25px"> JAN </option>
+                            <select class="mt-3 font-weight-bold pl-2 pr-2" name="" id="month" style="height: 50%; width: 25%; color: #27446d; background: #f7f3f2; ">
+                                <option value="00" class="p-2" style="color: #27446d; font-size: 15px"> JAN </option>
+                                <option value="01" class="p-2" style="color: #27446d; font-size: 15px"> FEB </option>
+                                <option value="02" class="p-2" style="color: #27446d; font-size: 15px"> MAR </option>
+                                <option value="03" class="p-2" style="color: #27446d; font-size: 15px"> APR </option>
+                                <option value="04" class="p-2" style="color: #27446d; font-size: 15px"> MAY </option>
+                                <option value="05" class="p-2" style="color: #27446d; font-size: 15px"> JUN </option>
+                                <option value="06" class="p-2" style="color: #27446d; font-size: 15px"> JUL </option>
+                                <option value="07" class="p-2" style="color: #27446d; font-size: 15px"> AUG </option>
+                                <option value="08" class="p-2" style="color: #27446d; font-size: 15px"> SEP </option>
+                                <option value="09" class="p-2" style="color: #27446d; font-size: 15px"> OCT </option>
+                                <option value="10" class="p-2" style="color: #27446d; font-size: 15px"> NOV </option>
+                                <option value="11" class="p-2" style="color: #27446d; font-size: 15px"> DEC </option>
+
                             </select>
                         </div>
                         <div class="mb-4" style="width: 40%; margin-left: -25%">
                             <span class="mb-4"></span><br>
-                            <select class="mt-3 font-weight-bold pl-2 pr-2" name="" id="" style="height: 65%; width: 25%; color: #27446d; background: #f7f3f2; ">
-                                <option value="1" class="font-weight-bold" style="color: #27446d;"> 2020 </option>
+                            <select class="mt-3 font-weight-bold pl-2 pr-2" name="" id="year" style="height: 65%; width: 25%; color: #27446d; background: #f7f3f2; ">
+                                <option value="2020" style="color: #27446d;"> 2020 </option>
+                                <option value="2021" style="color: #27446d;"> 2021 </option>
+                                <option value="2022" style="color: #27446d;"> 2022 </option>
+                                <option value="2023" style="color: #27446d;"> 2023 </option>
+                                <option value="2024" style="color: #27446d;"> 2024 </option>
+                                <option value="2025" style="color: #27446d;"> 2025 </option>
+                                <option value="2026" style="color: #27446d;"> 2026 </option>
+                                <option value="2027" style="color: #27446d;"> 2027 </option>
+                                <option value="2028" style="color: #27446d;"> 2028 </option>
+                                <option value="2029" style="color: #27446d;"> 2029 </option>
+                                <option value="2030" style="color: #27446d;"> 2030 </option>
                             </select>
                             
                         </div>
@@ -78,20 +129,93 @@
                             <div class="container-fluid d-flex justify-content-center ml-2">
                             <div class="" style="padding-left: 9%; width: 30%">
                                 <span class="font-weight-bold mb-2" style="font-size: 20px">Time</span><br>
-                                <select class="mt-2 font-weight-bold pl-2 pr-2" name="" id="" style="height: 50%; width: 30%; color: #27446d; background: #f7f3f2; ">
-                                    <option value="1" class="font-weight-bold p-2" style="color: #27446d;"> <span>HH</span> </option>
+                                <select id="hour" class="mt-2 font-weight-bold pl-2 pr-2" name="" id="" style="height: 50%; width: 30%; color: #27446d; background: #f7f3f2; ">
+                                    <option value="01" class="font-weight-bold p-2" style="color: #27446d;"> <span>HH</span> </option>
+                                    <option value="01" class="font-weight-bold p-2" style="color: #27446d;"> <span>01</span> </option>
+                                    <option value="02" class="font-weight-bold p-2" style="color: #27446d;"> <span>02</span> </option>
+                                    <option value="03" class="font-weight-bold p-2" style="color: #27446d;"> <span>03</span> </option>
+                                    <option value="04" class="font-weight-bold p-2" style="color: #27446d;"> <span>04</span> </option>
+                                    <option value="05" class="font-weight-bold p-2" style="color: #27446d;"> <span>05</span> </option>
+                                    <option value="06" class="font-weight-bold p-2" style="color: #27446d;"> <span>06</span> </option>
+                                    <option value="07" class="font-weight-bold p-2" style="color: #27446d;"> <span>07</span> </option>
+                                    <option value="08" class="font-weight-bold p-2" style="color: #27446d;"> <span>08</span> </option>
+                                    <option value="09" class="font-weight-bold p-2" style="color: #27446d;"> <span>09</span> </option>
+                                    <option value="10" class="font-weight-bold p-2" style="color: #27446d;"> <span>10</span> </option>
+                                    <option value="11" class="font-weight-bold p-2" style="color: #27446d;"> <span>11</span> </option>
+                                    <option value="12" class="font-weight-bold p-2" style="color: #27446d;"> <span>12</span> </option>
                                 </select>
                             </div>
                             <div style="width: 40%; margin-left: -10%">
                                 <span></span><br>
-                                <select class="mt-3 font-weight-bold pl-2 pr-2" name="" id="" style="height: 50%; width: 20%; color: #27446d; background: #f7f3f2; ">
-                                    <option value="1" class="font-weight-bold" style="color: #27446d;"> <span>MM</span> </option>
+                                <select id="minute" class="mt-3 font-weight-bold pl-2 pr-2" name="" id="" style="height: 50%; width: 20%; color: #27446d; background: #f7f3f2; ">
+                                    <option value="00" class="font-weight-bold p-2" style="color: #27446d;"> <span>00</span> </option>
+                                    <option value="01" class="font-weight-bold" style="color: #27446d;"> <span>01</span> </option>
+                                    <option value="02" class="font-weight-bold p-2" style="color: #27446d;"> <span>02</span> </option>
+                                    <option value="03" class="font-weight-bold p-2" style="color: #27446d;"> <span>03</span> </option>
+                                    <option value="04" class="font-weight-bold p-2" style="color: #27446d;"> <span>04</span> </option>
+                                    <option value="05" class="font-weight-bold p-2" style="color: #27446d;"> <span>04</span> </option>
+                                    <option value="06" class="font-weight-bold p-2" style="color: #27446d;"> <span>05</span> </option>
+                                    <option value="07" class="font-weight-bold p-2" style="color: #27446d;"> <span>06</span> </option>
+                                    <option value="08" class="font-weight-bold p-2" style="color: #27446d;"> <span>07</span> </option>
+                                    <option value="09" class="font-weight-bold p-2" style="color: #27446d;"> <span>08</span> </option>
+                                    <option value="10" class="font-weight-bold p-2" style="color: #27446d;"> <span>09</span> </option>
+                                    <option value="11" class="font-weight-bold p-2" style="color: #27446d;"> <span>10</span> </option>
+                                    <option value="12" class="font-weight-bold" style="color: #27446d;"> <span>12</span> </option>
+                                    <option value="13" class="font-weight-bold p-2" style="color: #27446d;"> <span>13</span> </option>
+                                    <option value="14" class="font-weight-bold p-2" style="color: #27446d;"> <span>14</span> </option>
+                                    <option value="15" class="font-weight-bold p-2" style="color: #27446d;"> <span>15</span> </option>
+                                    <option value="16" class="font-weight-bold p-2" style="color: #27446d;"> <span>16</span> </option>
+                                    <option value="17" class="font-weight-bold p-2" style="color: #27446d;"> <span>17</span> </option>
+                                    <option value="18" class="font-weight-bold p-2" style="color: #27446d;"> <span>18</span> </option>
+                                    <option value="19" class="font-weight-bold p-2" style="color: #27446d;"> <span>19</span> </option>
+                                    <option value="20" class="font-weight-bold p-2" style="color: #27446d;"> <span>20</span> </option>
+                                    <option value="21" class="font-weight-bold p-2" style="color: #27446d;"> <span>21</span> </option>
+                                    <option value="22" class="font-weight-bold p-2" style="color: #27446d;"> <span>22</span> </option>
+                                    <option value="23" class="font-weight-bold p-2" style="color: #27446d;"> <span>23</span> </option>
+                                    <option value="24" class="font-weight-bold p-2" style="color: #27446d;"> <span>24</span> </option>
+                                    <option value="25" class="font-weight-bold" style="color: #27446d;"> <span>25</span> </option>
+                                    <option value="26" class="font-weight-bold p-2" style="color: #27446d;"> <span>26</span> </option>
+                                    <option value="27" class="font-weight-bold p-2" style="color: #27446d;"> <span>27</span> </option>
+                                    <option value="28" class="font-weight-bold p-2" style="color: #27446d;"> <span>28</span> </option>
+                                    <option value="29" class="font-weight-bold p-2" style="color: #27446d;"> <span>29</span> </option>
+                                    <option value="30" class="font-weight-bold p-2" style="color: #27446d;"> <span>30</span> </option>
+                                    <option value="31" class="font-weight-bold p-2" style="color: #27446d;"> <span>31</span> </option>
+                                    <option value="32" class="font-weight-bold p-2" style="color: #27446d;"> <span>32</span> </option>
+                                    <option value="33" class="font-weight-bold p-2" style="color: #27446d;"> <span>33</span> </option>
+                                    <option value="34" class="font-weight-bold p-2" style="color: #27446d;"> <span>34</span> </option>
+                                    <option value="35" class="font-weight-bold p-2" style="color: #27446d;"> <span>35</span> </option>
+                                    <option value="36" class="font-weight-bold p-2" style="color: #27446d;"> <span>36</span> </option>
+                                    <option value="37" class="font-weight-bold" style="color: #27446d;"> <span>37</span> </option>
+                                    <option value="38" class="font-weight-bold p-2" style="color: #27446d;"> <span>38</span> </option>
+                                    <option value="39" class="font-weight-bold p-2" style="color: #27446d;"> <span>39</span> </option>
+                                    <option value="40" class="font-weight-bold p-2" style="color: #27446d;"> <span>40</span> </option>
+                                    <option value="41" class="font-weight-bold p-2" style="color: #27446d;"> <span>41</span> </option>
+                                    <option value="42" class="font-weight-bold p-2" style="color: #27446d;"> <span>42</span> </option>
+                                    <option value="43" class="font-weight-bold p-2" style="color: #27446d;"> <span>43</span> </option>
+                                    <option value="44" class="font-weight-bold p-2" style="color: #27446d;"> <span>44</span> </option>
+                                    <option value="45" class="font-weight-bold p-2" style="color: #27446d;"> <span>45</span> </option>
+                                    <option value="46" class="font-weight-bold p-2" style="color: #27446d;"> <span>46</span> </option>
+                                    <option value="47" class="font-weight-bold p-2" style="color: #27446d;"> <span>47</span> </option>
+                                    <option value="48" class="font-weight-bold p-2" style="color: #27446d;"> <span>48</span> </option>
+                                    <option value="49" class="font-weight-bold p-2" style="color: #27446d;"> <span>49</span> </option>
+                                    <option value="50" class="font-weight-bold p-2" style="color: #27446d;"> <span>50</span> </option>
+                                    <option value="51" class="font-weight-bold p-2" style="color: #27446d;"> <span>51</span> </option>
+                                    <option value="52" class="font-weight-bold p-2" style="color: #27446d;"> <span>52</span> </option>
+                                    <option value="53" class="font-weight-bold p-2" style="color: #27446d;"> <span>53</span> </option>
+                                    <option value="54" class="font-weight-bold p-2" style="color: #27446d;"> <span>54</span> </option>
+                                    <option value="55" class="font-weight-bold p-2" style="color: #27446d;"> <span>55</span> </option>
+                                    <option value="56" class="font-weight-bold p-2" style="color: #27446d;"> <span>56</span> </option>
+                                    <option value="57" class="font-weight-bold p-2" style="color: #27446d;"> <span>57</span> </option>
+                                    <option value="58" class="font-weight-bold p-2" style="color: #27446d;"> <span>58</span> </option>
+                                    <option value="59" class="font-weight-bold p-2" style="color: #27446d;"> <span>59</span> </option>
+
                                 </select>
                             </div>
                             <div class="mb-4" style="width: 40%; margin-left: -27%">
                                 <span></span><br>
-                                <select class="mt-3 font-weight-bold pl-2 pr-2" name="" id="" style="height: 69%; width: 20%; color: #27446d; background: #f7f3f2; ">
-                                    <option value="1" class="font-weight-bold" style="color: #27446d;"> AM </option>
+                                <select id="main" class="mt-3 font-weight-bold pl-2 pr-2" name="" id="" style="height: 69%; width: 20%; color: #27446d; background: #f7f3f2; ">
+                                    <option value="AM" style="color: #27446d;"> AM </option>
+                                    <option value="PM" style="color: #27446d;"> PM </option>
                                 </select>
                                 
                             </div>
@@ -104,16 +228,115 @@
                         <div class="container-fluid d-flex justify-content-center">
                         <div class="" style="width: 30%; margin-left: -25%">
                             <span class="font-weight-bold mb-4" style="font-size: 20px">Notes</span><br>
-                            <textarea class="mt-2" style="padding: 5px; background: #f5f3f4; border: 1px solid #cecccd; border-radius: 5px" name="" id="" cols="50" rows="5"></textarea>
+                            <textarea id="note" class="mt-2" style="padding: 5px; background: #f5f3f4; border: 1px solid #cecccd; border-radius: 5px" name="" id="" cols="50" rows="5"></textarea>
                     </div>
 
                     
                 </div>
                 <div class="container d-flex justify-content-center">
-                    <button class="btn text-white" type="submit" style="background: #27446d;">Add new Task</button>
+                    <button id="submit" class="btn text-white" type="submit" style="background: #27446d;" data-toggle="modal" data-target="#exampleModal">Add new Task</button>
                 </div>
             </div>
         </div>
     </div>
+
+          
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" style="font-size: 30px; color: #27446d;" id="exampleModalLabel">TODO</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Your Task has been saved successfully
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn text-white" style="background: #27446d;" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    <script>
+
+        const day = document.querySelector('#day');
+        const month = document.querySelector('#month');
+        const submit = document.querySelector('#submit');
+        const year = document.querySelector('#year');
+        const note = document.querySelector('#note');
+        const taskTittle = document.querySelector('#taskTitle');
+        const main = document.querySelector('#main');
+        const hour = document.querySelector('#hour');
+        const minute = document.querySelector('#minute');
+        const category = document.querySelector('#location');
+        const twentyNine = document.querySelector('#29');
+        const twentyEight = document.querySelector('#30');
+        const date = new Date();
+
+
+        year.value = date.getFullYear();
+        day.value = date.getDate() < 10 ? day.value = "0"+date.getDate() : day.value = date.getDate(); 
+        month.value = date.getMonth() < 10 ? month.value = "0"+date.getMonth() : month.value = date.getMonth();
+        let hours;
+        hours = date.getHours() > 12 ? hours = (date.getHours() / 2) - 1 : hours = date.getHours();
+        main.value = date.getHours() > 12 ? main.value = "PM": main.value = "AM"
+        hour.value = hours < 10 ? hour.value = "0"+ hours : hour.value = hours;
+        minute.value = date.getMinutes() < 10 ? minute.value = "0"+date.getMinutes() : minute.value = date.getMinutes();
+
+        function totalNumberofDays(month, year){
+            return new Date(year, month, 0).getDate()
+        }
+
+        let allDaysInAMonth = totalNumberofDays(month.value + 1, year.value);
+        if(allDaysInAMonth == "28"){
+
+        }
+
+        submit.addEventListener('click', () => {
+        //    const date = day.value + " " + month.value + " " + year;
+        //    const Time = hour.value + " " + minute.value + " " + main.value;
+           const taskDate = new Date(year.value(), month.value(), day.value(), hour.value(), minute.value());
+           const taskTitle =  taskTittle.value;
+           const mainNote = note.value;
+           const mainLocation = category.value;
+        
+           const eachTask = {
+               date,
+               Time,
+               taskTitle,
+               mainNote,
+               mainLocation
+           }
+
+                const memory = localStorage.getItem('tasklist');
+                if(memory == null){
+                    const database = {
+                        "db": [
+                        ]
+                    }
+                    const newMem = database.db;
+                    newMem.push(eachTask);
+                    localStorage.setItem('tasklist', JSON.stringify(database));
+                    console.log('saved');
+                }
+                else {
+                    const mainMemory = JSON.parse(memory);
+                    const newStorage = mainMemory.db;
+                    newStorage.push(eachTask);    
+                    localStorage.setItem('tasklist', JSON.stringify(mainMemory));
+                }
+                taskTittle.value = "";
+                day.value = "0" + date.getDate();
+
+                // month.value = date.getMonth() + 1;
+        })
+        
+    </script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 </body>
 </html>
